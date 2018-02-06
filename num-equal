@@ -1,0 +1,18 @@
+        INP
+        STA NUM1
+        INP
+        STA NUM2
+        SUB NUM1
+        BRZ EQUAL
+        BRA NEQUAL
+EQUAL   LDA ONE
+        OUT
+        BRA END
+NEQUAL  LDA ZERO
+        OUT
+        BRA END
+END     HLT
+NUM1    DAT
+NUM2    DAT
+ZERO    DAT 000
+ONE     DAT 001

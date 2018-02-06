@@ -1,0 +1,22 @@
+        INP
+        STA NUM1
+        INP
+        STA NUM2
+LSTART  LDA NUM2
+        SUB I
+        BRZ LEND
+        LDA I
+        ADD ONE
+        STA I 
+        LDA VAL
+        ADD NUM1
+        STA VAL
+        BRA LSTART 
+LEND    LDA VAL
+        OUT
+        HLT
+NUM1    DAT
+NUM2    DAT
+I       DAT 000
+VAL     DAT 000
+ONE     DAT 001
